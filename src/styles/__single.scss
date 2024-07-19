@@ -1,0 +1,85 @@
+#single-entry-content {
+  :where(h2, h3, h4):not(:where([class~="not-prose"] *)) {
+    @apply scroll-mt-10 lg:scroll-mt-24;
+  }
+
+  iframe {
+    @apply max-w-full;
+  }
+}
+
+.not-prose {
+  @apply text-base font-normal text-neutral-900 dark:text-neutral-100;
+}
+
+
+.main-title {
+  font-weight: 600;
+  width: fit-content;
+  padding-bottom: 5px;
+  border-bottom: 7px solid #025b30;
+}
+
+.menu-content {
+  border-top: 8px solid #008541;
+}
+
+.menu-content h4 {
+  font-family: Merriweather, Georgia, serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 0 10px 20px;
+  border-bottom: 1px solid #d6d6d6;
+  margin-bottom: 0;
+}
+
+.menu-content ul {
+  padding: 0;
+}
+
+.menu-content li {
+  list-style-type: none;
+  border-bottom: 1px solid #d6d6d6;
+  padding: 15px 10px;
+  margin: 0;
+}
+
+.menu-content li a {
+  font-weight: 700;
+}
+
+.policy-page h2 {
+  margin: 35px 0 0;
+}
+
+.policy-page p {
+  margin: 1.333em 0;
+  line-height: 1.7;
+  font-size: 18px;
+}
+
+.general-introduce::before {
+  border-top: 7px solid #025b30;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 16px;
+  width: 125px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 740px;
+  }
+
+  .container.single-post {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .policy-page h2 {
+    font-size: 26px;
+  }
+}

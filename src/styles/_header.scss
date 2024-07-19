@@ -1,0 +1,50 @@
+.nc-MainNav1 {
+  &.notOnTop {
+    @apply bg-white dark:bg-neutral-900 backdrop-blur-2xl bg-opacity-70 dark:bg-opacity-60 shadow-sm dark:border-b dark:border-neutral-700;
+  }
+}
+
+.menu-item.menu-megamenu:hover {
+  > .sub-menu {
+    @apply visible;
+  }
+}
+
+html.dismiss_top_banner {
+  .Ncmaz_Banner {
+    @apply hidden;
+  }
+}
+
+.main-header {
+  background-color: #1b1b1b;
+  min-height: 70px;
+}
+
+.main-header .header-subscribe{
+  background-color: #00ae3d;
+  color: #000;
+  border-radius: 30px ;
+  margin-right: 0;
+}
+
+.main-header .logo-image {
+  width: 150px;
+  margin-left: 0 !important;
+}
+
+.main-header .menu-item *{
+  color: #fff;
+}
+
+.main-header .menu-item .sub-menu *{
+  color: #fff;
+}
+
+.main-header .menu-item a:hover{
+  background-color: unset;
+}
+
+.header-button .nc-Button {
+  margin-right: 0;
+}

@@ -1,0 +1,25 @@
+.newsletter-container {
+    background: url("https://www.elle.com/_assets/design-tokens/elle/static/images/marketing/bg-newsletter.jpg");
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-container .form-newsletter {
+    background-color: #fff;
+    max-width: 540px;
+    width: 100%;
+    margin: auto;
+    padding: 45px 30px;
+}
+
+.newsletter-container .form-newsletter button {
+    padding: 11px 70px;
+}
+
+@media (max-width: 767px) {
+    .newsletter-container .form-newsletter h4 {
+        font-size: 30px;
+    }
+}

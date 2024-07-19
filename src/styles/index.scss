@@ -1,0 +1,82 @@
+body {
+    font-family: Inter,Sans-serif;
+}
+
+body, html {
+    scroll-behavior: smooth;
+}
+
+.text-base {
+    line-height: 1.6em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Noto Serif Display, Georgia, serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+}
+
+.image-aspect-ratio {
+    aspect-ratio: 1200 / 700;
+    object-fit: cover;
+}
+
+.square-aspect-ratio {
+    aspect-ratio: 300 / 300;
+    object-fit: cover;
+}
+
+a {
+    width: fit-content !important;
+}
+
+.container {
+    max-width: 1200px;
+    padding: unset;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.container.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.has-text-align-center {
+    text-align: center;
+}
+
+.font-merriweather {
+    font-family: Merriweather, Georgia, serif;
+}
+
+.font-inter {
+    font-family: Inter,Sans-serif;
+}
+
+.font-noto {
+    font-family: Noto Serif Display, Georgia, serif;
+}
+
+@media (min-width: 1024px) {
+    .lg\:text-lg {
+        font-size: 1.125rem;
+        line-height: 1.9em;
+    }
+}
+
+@import "react-loading-skeleton/dist/skeleton.css";
+//
+@import "./_wp-global";
+//
+@import "./_theme_colors";
+@import "./_theme_custom";
+//
+@import "./header";
+@import "./_single";
+//
+@import "./_tiptap";
+@import "./_tiptap_MenuBar";
+@import "./_tiptap_MenuItem";
