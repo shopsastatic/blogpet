@@ -20,7 +20,7 @@ import { TCategoryCardFull } from "@/components/CardCategory1/CardCategory1";
 import SearchPageLayout from "@/container/SearchPageLayout";
 import getTrans from "@/utils/getTrans";
 
-const Page: FaustPage<SearchPageQueryGetUsersBySearchQuery> = (props) => {
+const Page: FaustPage<SearchPageQueryGetUsersBySearchQuery> = (props: any) => {
   const router = useRouter();
   const initUsers = props.data?.users?.nodes;
   const initPageInfo = props.data?.users?.pageInfo;

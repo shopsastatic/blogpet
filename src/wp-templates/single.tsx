@@ -43,7 +43,7 @@ const DynamicSingleType5 = dynamic(
   () => import("../container/singles/single-5/single-5")
 );
 
-const Component: FaustTemplate<GetPostSiglePageQuery> = (props) => {
+const Component: FaustTemplate<GetPostSiglePageQuery> = (props: any) => {
   //  LOADING ----------
   if (props.loading) {
     return <>Loading...</>;

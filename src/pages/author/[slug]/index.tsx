@@ -8,7 +8,7 @@ import { FOOTER_LOCATION, PRIMARY_LOCATION } from "@/contains/menu";
 import AuthorPostsChild from "@/container/author/AuthorPostsChild";
 import Page404Content from "@/container/404Content";
 
-const Page: FaustPage<GetAuthorWithPostsQuery> = (props) => {
+const Page: FaustPage<GetAuthorWithPostsQuery> = (props: any) => {
   if (!props.data?.user) {
     return <Page404Content />;
   }

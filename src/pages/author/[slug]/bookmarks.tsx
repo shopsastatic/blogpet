@@ -6,7 +6,7 @@ import React from "react";
 import { FOOTER_LOCATION, PRIMARY_LOCATION } from "@/contains/menu";
 import AuthorSaveChild from "@/container/author/AuthorSaveChild";
 
-const Page: FaustPage<PageAuthorBookmarksGetDataQuery> = (props) => {
+const Page: FaustPage<PageAuthorBookmarksGetDataQuery> = (props: any) => {
   return (
     <>
       {/* @ts-ignore */}

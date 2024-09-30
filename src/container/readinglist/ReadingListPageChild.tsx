@@ -19,7 +19,7 @@ import getTrans from "@/utils/getTrans";
 
 //
 
-const ReadingListPageChild: FaustPage<GetReadingListPageQuery> = (props) => {
+const ReadingListPageChild: FaustPage<GetReadingListPageQuery> = (props: any) => {
   // START ----------
   const { isReady, isAuthenticated } = useSelector(
     (state: RootState) => state.viewer.authorizedUser

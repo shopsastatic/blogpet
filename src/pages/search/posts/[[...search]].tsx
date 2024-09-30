@@ -18,7 +18,7 @@ import { TPostCard } from "@/components/Card2/Card2";
 import { TCategoryCardFull } from "@/components/CardCategory1/CardCategory1";
 import SearchPageLayout from "@/container/SearchPageLayout";
 
-const Page: FaustPage<SearchPageQueryGetPostsBySearchQuery> = (props) => {
+const Page: FaustPage<SearchPageQueryGetPostsBySearchQuery> = (props: any) => {
   const { posts } = props.data || {};
 
   const router = useRouter();

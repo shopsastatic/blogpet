@@ -13,7 +13,7 @@ import ReadingListPageChild from "@/container/readinglist/ReadingListPageChild";
 
 //
 
-const Page: FaustPage<GetReadingListPageQuery> = (props) => {
+const Page: FaustPage<GetReadingListPageQuery> = (props: any) => {
   const T = getTrans();
 
   

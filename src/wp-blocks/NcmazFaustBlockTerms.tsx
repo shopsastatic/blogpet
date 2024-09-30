@@ -24,7 +24,7 @@ const NcmazFaustBlockTerms: WordPressBlock<
     clientId?: string;
     parentClientId?: string;
   }
-> = (props) => {
+> = (props: any) => {
   const { blockVariation, hasBackground } = props.attributes || {};
 
   if (!props.renderedHtml) {

@@ -21,7 +21,7 @@ import { useSelector } from "react-redux";
 import { RootState } from "@/stores/store";
 import { PostStyleTemplate } from "@/components/PostSubmissionEditor/PostOptionsBtn";
 
-const Page: FaustPage<{}> = (props) => {
+const Page: FaustPage<{}> = (props: any) => {
   const { isReady, isAuthenticated } = useSelector(
     (state: RootState) => state.viewer.authorizedUser
   );

@@ -9,7 +9,7 @@ import { GetStaticPropsContext } from 'next';
 import { FOOTER_LOCATION, PRIMARY_LOCATION } from '@/contains/menu';
 import { gql } from '@/__generated__';
 
-const Page: FaustPage<any> = (props) => {
+const Page: FaustPage<any> = (props: any) => {
   const T = getTrans();
   const [email, setEmail] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);

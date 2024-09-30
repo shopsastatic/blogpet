@@ -18,7 +18,7 @@ import { clsx } from 'clsx'
 import { useMusicPlayer } from '@/hooks/useMusicPlayer'
 
 export interface SingleContentProps {
-	post: GetPostSiglePageQuery['post']
+	post: any
 }
 
 const SingleContent: FC<SingleContentProps> = ({ post }) => {

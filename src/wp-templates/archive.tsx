@@ -15,7 +15,7 @@ import { getPostFormatDataFromFragment } from "@/utils/getPostFormatDataFromFrag
 import { FaustTemplate } from "@faustwp/core";
 import { FireIcon } from "@heroicons/react/24/outline";
 
-const Archive: FaustTemplate<PageArchiveGetArchiveQuery> = (props) => {
+const Archive: FaustTemplate<PageArchiveGetArchiveQuery> = (props: any) => {
   // LOADING ----------
   if (props.loading) {
     return <>Loading...</>;

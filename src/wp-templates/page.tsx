@@ -13,7 +13,7 @@ import Button from "@/components/Button/Button";
 import { formatDate } from "@/components/FormatedDate";
 import { useEffect, useRef } from "react";
 
-const Page: FaustTemplate<GetPageQuery> = (props) => {
+const Page: FaustTemplate<GetPageQuery> = (props: any) => {
   // LOADING ----------
   if (props.loading) {
     return <>Loading...</>;
@@ -46,7 +46,7 @@ const Page: FaustTemplate<GetPageQuery> = (props) => {
   const pageCategory = props?.data?.page?.pageCategory?.pageCategory?.nodes?.[0] || []
   console.log(pageCategory)
 
-  const contentRef = useRef(null);
+  const contentRef = useRef(null) as any;
 
   const dataPost = homePost;
 

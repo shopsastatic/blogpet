@@ -18,7 +18,7 @@ import { FaustTemplate } from "@faustwp/core";
 import { FireIcon, FolderIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
-const Category: FaustTemplate<PageCategoryGetCategoryQuery> = (props) => {
+const Category: FaustTemplate<PageCategoryGetCategoryQuery> = (props: any) => {
   // LOADING ----------
   if (props.loading) {
     return <>Loading...</>;
