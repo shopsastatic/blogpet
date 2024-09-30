@@ -4,9 +4,11 @@ import truncate from 'html-truncate';
 import { isArray } from 'lodash';
 
 interface MainLayoutCategoryProps {
-    data: Array<any>;
+    data: any
     countPosts: number;
 }
+
+type Post = any
 
 function truncateHTMLContent(html: any, maxLength: any) {
     if (typeof document !== 'undefined') {
@@ -30,7 +32,7 @@ function truncateHTMLContent(html: any, maxLength: any) {
 }
 
 const MainLayoutCategory: React.FC<MainLayoutCategoryProps> = ({ data, countPosts }) => {
-    let dataPost =  [];
+    let dataPost: Post[] = [];
 
     if(isArray(data)) {
         dataPost = data
