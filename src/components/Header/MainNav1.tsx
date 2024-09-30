@@ -19,7 +19,7 @@ export interface MainNav1Props {
 const MainNav1: FC<MainNav1Props> = ({ menuItems, title, description }) => {
 	return (
 		<>
-			<div className="main-header nc-MainNav1 flex items-center">
+			<div className="main-header flex items-center">
 				<div className="container">
 					<div className="flex h-12 items-center justify-between py-3 sm:py-4">
 						<div className="flex flex-1 items-center">

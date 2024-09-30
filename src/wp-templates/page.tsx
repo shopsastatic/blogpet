@@ -126,7 +126,7 @@ const Page: FaustTemplate<GetPageQuery> = (props: any) => {
                   <p className="text-lg mt-2 line-clamp-3" ref={contentRef}></p>
                 </div>
                 <div className="banner-home-right col-span-1 order-3 md:col-span-8 small-xl:col-span-2">
-                  ssss
+                    
                 </div>
               </div>
 
