@@ -26,7 +26,7 @@ import { NC_SITE_SETTINGS } from '@/contains/site-settings'
 
 const AuthorFavoritesChild: FaustPage<
 	PageAuthorFavoritesGetDataQuery
-> = props => {
+> = (props: any) => {
 	const { user } = props.data || {}
 	const { name, ncUserMeta } = getUserDataFromUserCardFragment(user || {})
 	const { viewer } = useSelector((state: RootState) => state.viewer)

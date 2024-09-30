@@ -24,7 +24,7 @@ import { RootState } from '@/stores/store'
 import GraphqlError from '@/components/GraphqlError'
 import { NC_SITE_SETTINGS } from '@/contains/site-settings'
 
-const AuthorSaveChild: FaustPage<PageAuthorBookmarksGetDataQuery> = props => {
+const AuthorSaveChild: FaustPage<PageAuthorBookmarksGetDataQuery> = (props: any) => {
 	const { user } = props.data || {}
 	const { name, ncUserMeta } = getUserDataFromUserCardFragment(user || {})
 	const { viewer } = useSelector((state: RootState) => state.viewer)

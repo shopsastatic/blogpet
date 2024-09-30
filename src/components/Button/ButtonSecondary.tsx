@@ -5,7 +5,7 @@ import Button, { ButtonProps } from './Button'
 
 export interface Props extends ButtonProps {}
 
-const ButtonSecondary: FC<Props> = props => {
+const ButtonSecondary: FC<Props> = (props: any) => {
 	return <Button {...props} pattern="secondary" />
 }
 

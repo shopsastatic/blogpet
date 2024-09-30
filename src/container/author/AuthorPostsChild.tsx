@@ -24,7 +24,7 @@ import { NC_SITE_SETTINGS } from '@/contains/site-settings'
 
 const FILTERS = FILTERS_OPTIONS
 
-const AuthorPostsChild: FaustPage<GetAuthorWithPostsQuery> = props => {
+const AuthorPostsChild: FaustPage<GetAuthorWithPostsQuery> = (props: any) => {
 	const { user } = props.data || {}
 
 	const posts = user?.posts

@@ -9,7 +9,7 @@ import toast from 'react-hot-toast'
 
 const NcmazFaustBlockCta: WordPressBlock<
 	NcmazFaustBlockCtaFragmentFragment
-> = props => {
+> = (props: any) => {
 	const { renderedHtml } = props || {}
 
 	const initErrorMessage = NC_SITE_SETTINGS.subcription_widget?.error_message
