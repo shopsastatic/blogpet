@@ -7,7 +7,7 @@ interface TrendingCategoryProps {
 
 const TrendingCategory: React.FC<TrendingCategoryProps> = ({ data }) => {
 
-    const contentRef = useRef(null);
+    const contentRef = useRef(null) as any;
 
     const trending = data;
     
