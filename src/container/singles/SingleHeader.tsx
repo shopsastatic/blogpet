@@ -231,31 +231,35 @@ const SingleHeader: FC<SingleHeaderProps> = ({
                   <Link href={item?.actionButtons[0]?.actionLink ?? "/"} className="w-fit"><p className="font-merriweather text-[32px] font-bold my-3 leading-snug inline">{item?.name}</p></Link>
                   <p className="mt-2">{item?.price}</p>
 
-                  <div className="pros mt-3 font-inter">
-                    <p className="font-semibold mb-2">Pros</p>
-                    <ul className="flex flex-col gap-2">
-                      {item?.prosCons?.pros && item?.prosCons?.pros.length > 0 && convertProsToArray(item?.prosCons?.pros).map((pros: any, index: any) => (
-                        <li className="text-sm flex gap-2 uppercase items-start" key={index}>
-                          <img width={15} className="mt-0.5" src="/images/posts/pros-icon.png" alt="" />
-                          {pros}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="cons mt-5 font-inter">
-                    <p className="font-semibold mb-2">Cons</p>
-                    <ul className="flex flex-col gap-2">
-                      {item?.prosCons?.cons && item?.prosCons?.cons.length > 0 && convertProsToArray(item?.prosCons?.cons).map((cons: any, index: any) =>
-                        cons && (
-                          <li key={index} className="text-sm flex gap-2 uppercase items-start">
-                            <img width={15} className="mt-0.5" src="/images/posts/cons-icon.png" alt="" />
-                            {cons}
+                  {item?.prosCons?.pros > 0 && (
+                    <div className="pros mt-3 font-inter">
+                      <p className="font-semibold mb-2">Pros</p>
+                      <ul className="flex flex-col gap-2">
+                        {item?.prosCons?.pros && item?.prosCons?.pros.length > 0 && convertProsToArray(item?.prosCons?.pros).map((pros: any, index: any) => (
+                          <li className="text-sm flex gap-2 uppercase items-start" key={index}>
+                            <img width={15} className="mt-0.5" src="/images/posts/pros-icon.png" alt="" />
+                            {pros}
                           </li>
-                        )
-                      )}
-                    </ul>
-                  </div>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {item?.prosCons?.cons?.length > 0 && (
+                    <div className="cons mt-5 font-inter">
+                      <p className="font-semibold mb-2">Cons</p>
+                      <ul className="flex flex-col gap-2">
+                        {item?.prosCons?.cons && item?.prosCons?.cons.length > 0 && convertProsToArray(item?.prosCons?.cons).map((cons: any, index: any) =>
+                          cons && (
+                            <li key={index} className="text-sm flex gap-2 uppercase items-start">
+                              <img width={15} className="mt-0.5" src="/images/posts/cons-icon.png" alt="" />
+                              {cons}
+                            </li>
+                          )
+                        )}
+                      </ul>
+                    </div>
+                  )}
 
                   <div className="mt-7">
                     {item?.actionButtons && item.actionButtons?.map((btn: any, index: any) => (

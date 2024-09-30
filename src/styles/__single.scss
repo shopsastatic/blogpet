@@ -68,6 +68,16 @@
   width: 125px;
 }
 
+.single-post h2 {
+  font-size: 28px;
+}
+
+.single-post table td, .single-post table th {
+  border: 1px solid #ccc;
+  padding: 14px;
+  text-align: left;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 740px;
