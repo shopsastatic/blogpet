@@ -82,7 +82,7 @@ const Category: FaustTemplate<PageCategoryGetCategoryQuery> = (props: any) => {
             <Link href={parent?.node?.uri ?? "/"} className="block text-xs w-fit py-0.5 px-5 m-auto mb-5 border border-slate-400 rounded-3xl text-center">{parent?.node?.name}</Link>
             <h2 className="text-center text-[70px] mb-5">{name}</h2>
 
-            <p className="max-w-[650px] text-[18px] mx-auto text-center" dangerouslySetInnerHTML={{__html: description}}></p>
+            <p className="max-w-[650px] text-[18px] mx-auto text-center" dangerouslySetInnerHTML={{__html: description || ""}}></p>
           </div>
         </ArchiveLayoutChild>
       </PageLayout>
@@ -113,7 +113,7 @@ const Category: FaustTemplate<PageCategoryGetCategoryQuery> = (props: any) => {
         <div className="container my-20">
           <h2 className="text-center text-[70px] mb-5">{name}</h2>
 
-          <p className="max-w-[650px] text-[18px] mx-auto text-center" dangerouslySetInnerHTML={{__html: description}}></p>
+          <p className="max-w-[650px] text-[18px] mx-auto text-center" dangerouslySetInnerHTML={{__html: description || ""}}></p>
 
           <div className="sub-category-list flex justify-center gap-x-10 mt-10 flex-wrap font-merriweather border-b-4 border-[#f0f0f0]">
             {categoryChild?.length && categoryChild.slice(0, 5).map((item: any, index: any) => (

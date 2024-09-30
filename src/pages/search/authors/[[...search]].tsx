@@ -144,7 +144,7 @@ const Page: FaustPage<SearchPageQueryGetUsersBySearchQuery> = (props: any) => {
           <Empty />
         ) : (
           <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 sm:gap-6 md:gap-8 mt-8 lg:mt-12">
-            {(currentUsers || []).map((user) => (
+            {(currentUsers || []).map((user: any) => (
               <CardAuthorBox
                 key={getUserDataFromUserCardFragment(user).databaseId}
                 author={user}
